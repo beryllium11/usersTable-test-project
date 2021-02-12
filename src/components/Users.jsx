@@ -23,7 +23,7 @@ const Users = ({users, selectUser, currentUser, modalHandler, isModalOpened, ...
                 </tr>
                 </thead>
                 <tbody>
-                { users.map(u => <UserItem handleShow={handleShow} user={u} modalHandler={modalHandler} selectUser={selectUser}/> )}
+                { users.map(u => <UserItem handleShow={handleShow} key={u.UserName} user={u} modalHandler={modalHandler} selectUser={selectUser}/> )}
                 </tbody>
             </Table>
 

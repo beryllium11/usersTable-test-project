@@ -13,7 +13,7 @@ let mapStateToProps = (state) => {
 };
 
 
-class UsersApiComponent extends React.Component {
+class UsersApiComponent extends React.PureComponent {
     componentDidMount() {
        this.props.getUsers();
     }
