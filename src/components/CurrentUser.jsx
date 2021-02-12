@@ -6,7 +6,6 @@ import Table from "react-bootstrap/Table";
 
 
 const CurrentUserInfo = ({currentUser, ...props}) => {
-    console.log(currentUser)
     return <Table striped bordered hover size="sm">
             <tbody>
             <tr><td><Badge variant="secondary">First Name</Badge></td><td>{currentUser.FirstName}</td></tr>
